@@ -20,7 +20,7 @@
     align-items: center;
     justify-content: space-evenly;
     background: url("img/img1.jpg") no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
     background-attachment: fixed;
 }
 
@@ -43,7 +43,7 @@ ul{
     display: flex;
     list-style: none;
     margin-right: 10px;
-    font-size: 10px;
+    font-size: 16px;
 }
 
 ul li a{
@@ -71,6 +71,8 @@ ul li a:hover{
 
 #landingSub{
     color: rgb(173, 173, 173);
+    font-size: 20px;
+    letter-spacing: 1px;
 }
 
 #landingTitle{
@@ -86,15 +88,15 @@ ul li a:hover{
 #landingTitleh1{
     color: white;
     font-family: 'Roboto', sans-serif;
-    font-size: 60px;
+    font-size: 80px;
     font-weight: 300;
 }
 
 
 #chevronWrapper img{
-      margin-top: 50px;
-    width: 20px;
-    height: 20px;
+      margin-top: 150px;
+    width: 30px;
+    height: 30px;
     animation: bounce-bottom 5s infinite;
 }
 
@@ -105,7 +107,7 @@ ul li a:hover{
 /* Start of main  */
 
 main{
-    height: 150vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -114,8 +116,9 @@ main{
 
 
 .cards{
-    width: 350px;
-    height: 450px;
+    margin-top: 80px;
+    width: 750px;
+    height: 650px;
     border-radius: 5px;
 }
 
@@ -132,7 +135,7 @@ main{
 
 #articleTop2{
     background: url("img/article2.jpg") no-repeat;
-    background-size: cover;
+    background-size: 100%;
 }
 
 .articleBottom{
@@ -153,14 +156,14 @@ main{
 }
 
 .articalSub{
-    font-size: 10px;
+    font-size: 16px;
     letter-spacing: 1px;
     margin: 10px 0 3px 0;
 }
 
 .articleHeading{
     color: rgb(41, 41, 41);
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 200;
     font-family: 'Roboto', sans-serif;
     border-top: solid 1px rgba(121, 121, 121, 0.3);
@@ -168,7 +171,7 @@ main{
 }
 
 .articleText{
-    font-size: 12px;
+    font-size: 15px;
     letter-spacing: 3;
     font-weight: 300;
     margin: 15px 0 20px 0;
@@ -237,7 +240,7 @@ main{
 
 
 #gallery{
-    height: 120vh;
+    height: 90vh;
     width: 100vw;
     background-color: rgb(236, 236, 236);
 }
@@ -251,7 +254,8 @@ main{
 }
 
 #gallerySub{
-    font-size: 12px;
+    margin-top: 20px;
+    font-size: 20px;
     letter-spacing: 2px;
     color: rgba(121, 121, 121,0.4);
 }
@@ -261,7 +265,7 @@ main{
     border-top: solid 1px rgb(121, 121, 121);
     color: rgb(41, 41, 41);
     margin: 5px 0;
-    font-size: 20px;
+    font-size: 25px;
     letter-spacing: 1px;
 }
 
@@ -271,13 +275,13 @@ main{
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    
+    margin-top: 50px;
 }
 
 .galleryBack{
     background: white;
-    width: 380px;
-    height: 150px;
+    width: 800px;
+    height: 250px;
     border-radius: 8px;
     margin: 30px 0;
     display: flex;
@@ -286,8 +290,8 @@ main{
 }
 
 #gallery1,#gallery2,#gallery3,#gallery4{
-    width: 360px;
-    height: 130px;
+    width: 780px;
+    height: 230px;
      
 }
 
@@ -299,7 +303,7 @@ main{
 #gallery2{
     background: url("img/article2.jpg") no-repeat;
     background-size: cover;
-    background-position: 10% 80%;
+    background-position: center;
 }
 
 #gallery3{
@@ -327,8 +331,8 @@ footer{
 
 
 footer img{
-    width: 15px;
-    height: 15px;
+    width: 25px;
+    height: 25px;
     cursor: pointer;
 }
 
@@ -339,7 +343,7 @@ img:hover {
 
 #footerText{
     color: white;
-    font-size: 10px;
+    font-size: 16px;
 }
 
 @keyframes bounce-bottom {
@@ -386,15 +390,14 @@ img:hover {
   }
   
 
-  @media screen and (max-width: 798px){
-    main{
-        height: 300vh;
+  @media screen and (max-width: 1515px){
+        main{
+        height: 200vh;
         flex-direction: column;
-    }
-
     
-#gallery{
-    height: 300vh;
+    }
+    #gallery{
+    height: 200vh;
   
 }
 
@@ -403,15 +406,15 @@ img:hover {
     }
   }
 
-
-  @media screen and (max-width: 390px){
+  @media screen and (max-width: 798px){
+  
     .cards{
         width: 300px;
     }
     
 
     #gallery{
-        height: 180vh;
+        height: 200vh;
       
     }
 
@@ -421,6 +424,48 @@ img:hover {
     
     #gallery1,#gallery2,#gallery3,#gallery4{
         width: 280px;
+    }
+    
+
+    .articalSub{
+        font-size: 10px;
+    }
+    
+    .articleHeading{
+        font-size: 16px;
+        margin: 0;
+    }
+    
+    .articleText{
+        font-size: 10px;
+        margin: 15px 0 30px 0;
+     
+    }
+    
+
+  }
+
+
+  @media screen and (max-width: 447px){
+    #landingSub{
+        font-size: 14px;
+    }
+    
+    
+    #gallerySub{
+        margin-top: 20px;
+        font-size: 13px;
+        letter-spacing: 2px;
+        color: rgba(121, 121, 121,0.4);
+    }
+    
+    #galleryTitle{
+        font-family: 'Roboto', sans-serif;
+        border-top: solid 1px rgb(121, 121, 121);
+        color: rgb(41, 41, 41);
+        margin: 5px 0;
+        font-size: 16px;
+        letter-spacing: 1px;
     }
 
   }
